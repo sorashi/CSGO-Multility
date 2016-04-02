@@ -38,12 +38,5 @@ I am working on this project in my free time, I have no income from it.
 
 If you love my creation, there is an option to donate:
 
-- PayPal donation:
-
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-	<input type="hidden" name="cmd" value="_s-xclick">
-	<input type="hidden" name="hosted_button_id" value="8YXLHHUBTV95G">
-	<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-	<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
+- [PayPal donation](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8YXLHHUBTV95G)
 - [Steam items donation](https://steamcommunity.com/tradeoffer/new/?partner=221969719&token=JT-vRjMz)
