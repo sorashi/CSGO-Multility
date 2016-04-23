@@ -45,7 +45,7 @@ namespace Multility
             {
                 // update fail is ignored
             }
-            Thread.Sleep(2000); // simulates the application loading process
+            await Task.Delay(3000); // simulates the application loading process
             main.Show();
             this.Close();
         }
