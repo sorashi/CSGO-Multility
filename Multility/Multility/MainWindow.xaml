@@ -9,6 +9,6 @@
         Title="MainWindow" Height="350" Width="525"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         Background="{DynamicResource MaterialDesignPaper}"
-        FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Robot">
+        FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Robot" WindowStartupLocation="CenterScreen">
     <Grid />
 </Window>

@@ -12,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 using Squirrel;
 
 namespace Multility
@@ -29,10 +30,8 @@ namespace Multility
         private async void Grid_Loaded(object sender, RoutedEventArgs e)
         {
             var main = new MainWindow();
-            try
-            {
-                using (var mgr = await UpdateManager.GitHubUpdateManager("https://github.com/Sorashi/CSGO-Multility"))
-                {
+            try {
+                using (var mgr = await UpdateManager.GitHubUpdateManager("https://github.com/Sorashi/CSGO-Multility")) {
                     SquirrelAwareApp.HandleEvents(
                         onInitialInstall: v => mgr.CreateShortcutForThisExe(),
                         onAppUpdate: v => mgr.CreateShortcutForThisExe(),
@@ -41,11 +40,10 @@ namespace Multility
                     await mgr.UpdateApp();
                 }
             }
-            catch
-            {
+            catch {
                 // update fail is ignored
             }
-            await Task.Delay(3000); // simulates the application loading process
+            await Task.Delay(4000); // simulates the application loading process
             main.Show();
             this.Close();
         }

@@ -6,7 +6,19 @@
         xmlns:gif="http://wpfanimatedgif.codeplex.com"
         xmlns:local="clr-namespace:Multility"
         mc:Ignorable="d"
-        Title="Splash" Height="300" Width="600" WindowStyle="None" Topmost="True" WindowStartupLocation="CenterScreen">
+        Title="Splash" Height="300" Width="600" Topmost="True" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True" Background="{x:Null}">
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Window.Loaded">
+            <BeginStoryboard>
+                <Storyboard Name="FormFade">
+                    <DoubleAnimation Name="FormFadeAnimation"
+                                     Storyboard.TargetProperty="(Window.Opacity)"
+                                     From="0.0" To="1.0" Duration="0:0:2"
+                                     AutoReverse="False" RepeatBehavior="1x" />
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Window.Triggers>
     <Grid Loaded="Grid_Loaded">
         <Image gif:ImageBehavior.AnimatedSource="splash.gif" />
     </Grid>
