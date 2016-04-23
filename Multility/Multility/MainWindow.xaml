@@ -4,11 +4,34 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Multility"
-        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="Multility.MainWindow"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525"
+        xmlns:System="clr-namespace:System;assembly=mscorlib"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        x:Class="Multility.MainWindow"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize ="13"
+        TextOptions.TextRenderingMode="Auto"
         Background="{DynamicResource MaterialDesignPaper}"
-        FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Robot" WindowStartupLocation="CenterScreen">
-    <Grid />
+        FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style x:Key="BasicMargin" TargetType="Control">
+            <Setter Property="Margin" Value="8,0,0,0" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <materialDesign:PackIcon Margin="8,0,0,0" VerticalAlignment="Center" Kind="Account" Grid.Row="0" Grid.Column="0" />
+        <TextBox Text="This is a test text box!" Margin="8,0,0,0" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center"></TextBox>
+        <Button Margin="8,0,0,0" Grid.Row="0" Grid.Column="2" Content="BUTTON"></Button>
+    </Grid>
 </Window>

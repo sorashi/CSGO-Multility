@@ -30,8 +30,9 @@ namespace Multility
         private async void Grid_Loaded(object sender, RoutedEventArgs e)
         {
             var main = new MainWindow();
+            // await UpdateManager.GitHubUpdateManager("https://github.com/Sorashi/CSGO-Multility")
             try {
-                using (var mgr = await UpdateManager.GitHubUpdateManager("https://github.com/Sorashi/CSGO-Multility")) {
+                using (var mgr = new UpdateManager(@"C:\Users\praza\Documents\GitHub\CSGO-Multility\Multility\Releases")) {
                     SquirrelAwareApp.HandleEvents(
                         onInitialInstall: v => mgr.CreateShortcutForThisExe(),
                         onAppUpdate: v => mgr.CreateShortcutForThisExe(),
@@ -40,8 +41,11 @@ namespace Multility
                     await mgr.UpdateApp();
                 }
             }
-            catch {
+            catch (Exception ex) {
                 // update fail is ignored
+#if DEBUG
+                MessageBox.Show("There was an error trying to reach for the update information.\n" + ex.Message);
+#endif
             }
             await Task.Delay(4000); // simulates the application loading process
             main.Show();
