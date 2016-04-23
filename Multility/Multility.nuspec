@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>Multility</id>
-        <version>0.0.1.1</version>
+        <version>0.0.0.1</version>
         <title>Multility</title>
         <authors>Sorashi</authors>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -10,21 +10,21 @@
         <releaseNotes />
     </metadata>
     <files>
-        <file src="Multility\bin\Release\DeltaCompressionDotNet.dll" target="lib\net45\DeltaCompressionDotNet.dll" />
-        <file src="Multility\bin\Release\DeltaCompressionDotNet.MsDelta.dll" target="lib\net45\DeltaCompressionDotNet.MsDelta.dll" />
-        <file src="Multility\bin\Release\DeltaCompressionDotNet.PatchApi.dll" target="lib\net45\DeltaCompressionDotNet.PatchApi.dll" />
-        <file src="Multility\bin\Release\ICSharpCode.SharpZipLib.dll" target="lib\net45\ICSharpCode.SharpZipLib.dll" />
-        <file src="Multility\bin\Release\MaterialDesignColors.dll" target="lib\net45\MaterialDesignColors.dll" />
-        <file src="Multility\bin\Release\MaterialDesignThemes.Wpf.dll" target="lib\net45\MaterialDesignThemes.Wpf.dll" />
-        <file src="Multility\bin\Release\Mono.Cecil.dll" target="lib\net45\Mono.Cecil.dll" />
-        <file src="Multility\bin\Release\Mono.Cecil.Mdb.dll" target="lib\net45\Mono.Cecil.Mdb.dll" />
-        <file src="Multility\bin\Release\Mono.Cecil.Pdb.dll" target="lib\net45\Mono.Cecil.Pdb.dll" />
-        <file src="Multility\bin\Release\Mono.Cecil.Rocks.dll" target="lib\net45\Mono.Cecil.Rocks.dll" />
-        <file src="Multility\bin\Release\Multility.exe" target="lib\net45\Multility.exe" />
-        <file src="Multility\bin\Release\Multility.exe.config" target="lib\net45\Multility.exe.config" />
-        <file src="Multility\bin\Release\NuGet.Squirrel.dll" target="lib\net45\NuGet.Squirrel.dll" />
-        <file src="Multility\bin\Release\Splat.dll" target="lib\net45\Splat.dll" />
-        <file src="Multility\bin\Release\Squirrel.dll" target="lib\net45\Squirrel.dll" />
-        <file src="Multility\bin\Release\WpfAnimatedGif.dll" target="lib\net45\WpfAnimatedGif.dll" />
+        <file src="Multility\bin\SquirrelRelease\DeltaCompressionDotNet.dll" target="lib\net45\DeltaCompressionDotNet.dll" />
+        <file src="Multility\bin\SquirrelRelease\DeltaCompressionDotNet.MsDelta.dll" target="lib\net45\DeltaCompressionDotNet.MsDelta.dll" />
+        <file src="Multility\bin\SquirrelRelease\DeltaCompressionDotNet.PatchApi.dll" target="lib\net45\DeltaCompressionDotNet.PatchApi.dll" />
+        <file src="Multility\bin\SquirrelRelease\ICSharpCode.SharpZipLib.dll" target="lib\net45\ICSharpCode.SharpZipLib.dll" />
+        <file src="Multility\bin\SquirrelRelease\MaterialDesignColors.dll" target="lib\net45\MaterialDesignColors.dll" />
+        <file src="Multility\bin\SquirrelRelease\MaterialDesignThemes.Wpf.dll" target="lib\net45\MaterialDesignThemes.Wpf.dll" />
+        <file src="Multility\bin\SquirrelRelease\Mono.Cecil.dll" target="lib\net45\Mono.Cecil.dll" />
+        <file src="Multility\bin\SquirrelRelease\Mono.Cecil.Mdb.dll" target="lib\net45\Mono.Cecil.Mdb.dll" />
+        <file src="Multility\bin\SquirrelRelease\Mono.Cecil.Pdb.dll" target="lib\net45\Mono.Cecil.Pdb.dll" />
+        <file src="Multility\bin\SquirrelRelease\Mono.Cecil.Rocks.dll" target="lib\net45\Mono.Cecil.Rocks.dll" />
+        <file src="Multility\bin\SquirrelRelease\Multility.exe" target="lib\net45\Multility.exe" />
+        <file src="Multility\bin\SquirrelRelease\Multility.exe.config" target="lib\net45\Multility.exe.config" />
+        <file src="Multility\bin\SquirrelRelease\NuGet.Squirrel.dll" target="lib\net45\NuGet.Squirrel.dll" />
+        <file src="Multility\bin\SquirrelRelease\Splat.dll" target="lib\net45\Splat.dll" />
+        <file src="Multility\bin\SquirrelRelease\Squirrel.dll" target="lib\net45\Squirrel.dll" />
+        <file src="Multility\bin\SquirrelRelease\WpfAnimatedGif.dll" target="lib\net45\WpfAnimatedGif.dll" />
     </files>
 </package>
