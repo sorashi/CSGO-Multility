@@ -20,6 +20,7 @@ namespace Multility
     /// </summary>
     public partial class MainWindow : Window
     {
+        public bool ShowTheWelcomeWizard { get; set; }
         public MainWindow()
         {
             InitializeComponent();
