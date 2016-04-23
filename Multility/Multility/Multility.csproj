@@ -183,8 +183,6 @@
     <GetAssemblyIdentity AssemblyFiles="$(TargetPath)">
       <Output TaskParameter="Assemblies" ItemName="myAssemblyInfo" />
     </GetAssemblyIdentity>
-    <Exec Command="if not exist $(SolutionDir)BuildPackages mkdir $(SolutionDir)BuildPackages" />
-    <Exec Command="nuget pack $(SolutionDir)Multility.nuspec -Version %(myAssemblyInfo.Version) -Properties Configuration=Release -OutputDirectory $(SolutionDir)BuildPackages -BasePath $(SolutionDir)" />
-    <Exec Command="$(SolutionDir)packages\squirrel.windows.1.3.0\tools\Squirrel.exe --releasify $(SolutionDir)BuildPackages\Multility.%(myAssemblyInfo.Version).nupkg" />
+    <Exec Command="$(SolutionDir)releasify.bat &quot;$(SolutionDir)&quot; &quot;%(myAssemblyInfo.Version)&quot;"/>
   </Target>
 </Project>
