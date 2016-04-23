@@ -8,6 +8,7 @@
         mc:Ignorable="d"
         Title="Splash" Height="300" Width="600" Topmost="True" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True" Background="{x:Null}">
     <Window.Triggers>
+        <!-- Triggers a fade-in when the window is loaded -->
         <EventTrigger RoutedEvent="Window.Loaded">
             <BeginStoryboard>
                 <Storyboard Name="FormFade">
