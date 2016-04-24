@@ -12,7 +12,7 @@ Deploying
 
 In the [`Multility.csproj`](Multility/Multility.csproj), you can see a few lines at the end:
 
-```
+```xml
   <Target Name="AfterBuild" Condition=" '$(Configuration)' == 'SquirrelRelease'">
     <GetAssemblyIdentity AssemblyFiles="$(TargetPath)">
       <Output TaskParameter="Assemblies" ItemName="myAssemblyInfo" />
